@@ -1,0 +1,253 @@
+﻿<Window x:Class="Hazeolation.MKWorldPointCalculator.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Mario Kart World Point Calculator" Width="1080" Height="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- War Configuration -->
+        <GroupBox x:Name="gbWarConfig" Grid.Column="0" Grid.Row="0" Header="War Configuration">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Home Team -->
+                <StackPanel x:Name="spHomeTeam" Grid.Row="0" Grid.Column="0">
+                    <Label x:Name="lbHomeTeam" Target="{Binding ElementName=tbHomeTeam}">Home Team</Label>
+                    <TextBox x:Name="tbHomeTeam" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Guest Team -->
+                <StackPanel x:Name="spGuestTeam" Grid.Row="0" Grid.Column="1">
+                    <Label x:Name="lbGuestTeam" Target="{Binding ElementName=tbGuestTeam}">Guest Team</Label>
+                    <TextBox x:Name="tbGuestTeam" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 3 -->
+                <StackPanel x:Name="spTeam3" Grid.Row="0" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam3" Target="{Binding ElementName=tbTeam3}">Team 3</Label>
+                    <TextBox x:Name="tbTeam3" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+                    
+                <!-- Team 4 -->
+                <StackPanel x:Name="spTeam4" Grid.Row="1" Grid.Column="0" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam4" Target="{Binding ElementName=tbTeam4}">Team 4</Label>
+                    <TextBox x:Name="tbTeam4" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 5 -->
+                <StackPanel x:Name="spTeam5" Grid.Row="1" Grid.Column="1" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam5" Target="{Binding ElementName=tbTeam5}">Team 5</Label>
+                    <TextBox x:Name="tbTeam5" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 6 -->
+                <StackPanel x:Name="spTeam6" Grid.Row="1" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam6" Target="{Binding ElementName=tbTeam6}">Team 6</Label>
+                    <TextBox x:Name="tbTeam6" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 7 -->
+                <StackPanel x:Name="spTeam7" Grid.Row="2" Grid.Column="0" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam7" Target="{Binding ElementName=tbTeam7}">Team 7</Label>
+                    <TextBox x:Name="tbTeam7" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 8 -->
+                <StackPanel x:Name="spTeam8" Grid.Row="2" Grid.Column="1" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam8" Target="{Binding ElementName=tbTeam8}">Team 8</Label>
+                    <TextBox x:Name="tbTeam8" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 9 -->
+                <StackPanel x:Name="spTeam9" Grid.Row="2" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam9" Target="{Binding ElementName=tbTeam9}">Team 9</Label>
+                    <TextBox x:Name="tbTeam9" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 10 -->
+                <StackPanel x:Name="spTeam10" Grid.Row="3" Grid.Column="0" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam10" Target="{Binding ElementName=tbTeam10}">Team 10</Label>
+                    <TextBox x:Name="tbTeam10" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 11 -->
+                <StackPanel x:Name="spTeam11" Grid.Row="3" Grid.Column="1" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam11" Target="{Binding ElementName=tbTeam11}">Team 11</Label>
+                    <TextBox x:Name="tbTeam11" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Team 12 -->
+                <StackPanel x:Name="spTeam12" Grid.Row="3" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbTeam12" Target="{Binding ElementName=tbTeam12}">Team 12</Label>
+                    <TextBox x:Name="tbTeam12" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Start War Button -->
+                <Button x:Name="btnStartWar" Width="84" Height="23" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5, 0, 0, 5" Grid.Row="4" Grid.Column="0" Click="OnStartWarClick">Start War</Button>
+                    
+                <!-- Player Count Dropdown -->
+                <StackPanel x:Name="spPlayers" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="4" Grid.Column="1">
+                    <Label x:Name="lbPlayers" Target="{Binding ElementName=cbPlayers}">Players</Label>
+                    <ComboBox x:Name="cbPlayers" Width="84" Height="23"  Margin="5, 0, 0, 5" SelectionChanged="OnPlayerCountChange">
+                        <ComboBoxItem>12 Players</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">24 Players</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Format Dropdown 12 Players -->
+                <StackPanel x:Name="spFormat12" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="4" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbFormat12" Target="{Binding ElementName=cbFormat12}">Format</Label>
+                    <ComboBox x:Name="cbFormat12" Width="84" Height="23"  Margin="5, 0, 0, 5" SelectionChanged="On12PlayerFormatChange">
+                        <ComboBoxItem IsSelected="True">6v6</ComboBoxItem>
+                        <ComboBoxItem>4v4...</ComboBoxItem>
+                        <ComboBoxItem>3v3...</ComboBoxItem>
+                        <ComboBoxItem>2v2...</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                
+                <!-- Format Dropdown 24 Players -->
+                <StackPanel x:Name="spFormat24" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="4" Grid.Column="2">
+                    <Label x:Name="lbFormat24" Target="{Binding ElementName=cbFormat24}">Format</Label>
+                    <ComboBox x:Name="cbFormat24" Width="84" Height="23"  Margin="5, 0, 0, 5" SelectionChanged="On24PlayerFormatChange">
+                        <ComboBoxItem IsSelected="True">12v12</ComboBoxItem>
+                        <ComboBoxItem>6v6...</ComboBoxItem>
+                        <ComboBoxItem>4v4...</ComboBoxItem>
+                        <ComboBoxItem>3v3...</ComboBoxItem>
+                        <ComboBoxItem>2v2...</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+        
+        <!-- Race Results -->
+        <GroupBox x:Name="gbRaceResults" Grid.Column="0" Grid.Row="1" Header="Race Results">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <!-- Spots Team 1 -->
+                <StackPanel x:Name="spSpotsTeam1" Grid.Row="0" Grid.Column="0">
+                    <Label x:Name="lbSpotsTeam1" Target="{Binding ElementName=tbSpotsTeam1}">Spots Team 1</Label>
+                    <TextBox x:Name="tbSpotsTeam1" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 2 -->
+                <StackPanel x:Name="spSpotsTeam2" Grid.Row="0" Grid.Column="1" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam2" Target="{Binding ElementName=tbSpotsTeam2}">Spots Team 2</Label>
+                    <TextBox x:Name="tbSpotsTeam2" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 3 -->
+                <StackPanel x:Name="spSpotsTeam3" Grid.Row="0" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam3" Target="{Binding ElementName=tbSpotsTeam3}">Spots Team 3</Label>
+                    <TextBox x:Name="tbSpotsTeam3" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 4 -->
+                <StackPanel x:Name="spSpotsTeam4" Grid.Row="1" Grid.Column="0" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam4" Target="{Binding ElementName=tbSpotsTeam4}">Spots Team 4</Label>
+                    <TextBox x:Name="tbSpotsTeam4" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 5 -->
+                <StackPanel x:Name="spSpotsTeam5" Grid.Row="1" Grid.Column="1" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam5" Target="{Binding ElementName=tbSpotsTeam5}">Spots Team 5</Label>
+                    <TextBox x:Name="tbSpotsTeam5" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 6 -->
+                <StackPanel x:Name="spSpotsTeam6" Grid.Row="1" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam6" Target="{Binding ElementName=tbSpotsTeam6}">Spots Team 6</Label>
+                    <TextBox x:Name="tbSpotsTeam6" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 7 -->
+                <StackPanel x:Name="spSpotsTeam7" Grid.Row="2" Grid.Column="0" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam7" Target="{Binding ElementName=tbSpotsTeam7}">Spots Team 7</Label>
+                    <TextBox x:Name="tbSpotsTeam7" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 8 -->
+                <StackPanel x:Name="spSpotsTeam8" Grid.Row="2" Grid.Column="1" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam8" Target="{Binding ElementName=tbSpotsTeam8}">Spots Team 8</Label>
+                    <TextBox x:Name="tbSpotsTeam8" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 9 -->
+                <StackPanel x:Name="spSpotsTeam9" Grid.Row="2" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam9" Target="{Binding ElementName=tbSpotsTeam9}">Spots Team 9</Label>
+                    <TextBox x:Name="tbSpotsTeam9" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 10 -->
+                <StackPanel x:Name="spSpotsTeam10" Grid.Row="3" Grid.Column="0" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam10" Target="{Binding ElementName=tbSpotsTeam10}">Spots Team 10</Label>
+                    <TextBox x:Name="tbSpotsTeam10" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 11 -->
+                <StackPanel x:Name="spSpotsTeam11" Grid.Row="3" Grid.Column="1" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam11" Target="{Binding ElementName=tbSpotsTeam11}">Spots Team 11</Label>
+                    <TextBox x:Name="tbSpotsTeam11" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Spots Team 12 -->
+                <StackPanel x:Name="spSpotsTeam12" Grid.Row="3" Grid.Column="2" IsEnabled="False" Visibility="Hidden">
+                    <Label x:Name="lbSpotsTeam12" Target="{Binding ElementName=tbSpotsTeam12}">Spots Team 12</Label>
+                    <TextBox x:Name="tbSpotsTeam12" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+
+                <!-- Track -->
+                <StackPanel x:Name="spTrack" Grid.Row="4" Grid.Column="2">
+                    <Label x:Name="lbTrack" Target="{Binding ElementName=tbTrack}">Track</Label>
+                    <TextBox x:Name="tbTrack" Width="84" HorizontalAlignment="Left" Margin="5, 0, 0, 0" />
+                </StackPanel>
+                
+                <!-- Add Score Button -->
+                <Button x:Name="btnAddScore" Width="84" Height="23" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5, 0, 0, 5" Grid.Row="4" Grid.Column="0" Click="OnAddScoreClick">Add Score</Button>
+            </Grid>
+        </GroupBox>
+        
+        <!-- Last Race -->
+        <ListBox x:Name="lbxLastRace" Margin="5" Grid.Row="0" Grid.Column="1" />
+        <Image x:Name="imgTrack" Width="200" Height="120" Stretch="Uniform" Grid.Row="0" Margin="0, 0, 10, 10" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+
+        <!-- Total Score -->
+        <ListBox x:Name="lbxTotalScore" Margin="5" Grid.Row="1" Grid.Column="1" />
+    
+        <!-- Full War -->
+        <ListBox x:Name="lbxFullWar" Margin="5" Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" />
+    </Grid>
+</Window>
