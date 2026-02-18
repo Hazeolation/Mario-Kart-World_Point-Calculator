@@ -54,7 +54,7 @@ A WPF application to **track and calculate scores** for *Mario Kart World* compe
 ## How It Works
 
 1. Select the player count (**12** or **24**) using the format combo boxes.
-2. Select the race format for the war.
+2. Select the race format and enter names of all participating teams for the war and click **Start War**.
 3. Enter placements for all participating teams.
 4. Click **Add Race** to:
    - Calculate race scores
